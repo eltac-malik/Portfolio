@@ -1,0 +1,119 @@
+.skills
+{
+    width: 100%;
+    min-height: 91.5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ability
+{
+    width: 40%;
+    height: 70%;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.experience
+{
+    width: 50%;
+    height: 70%;
+    border: 3px solid #f5df4e;
+    border-radius: 5px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 20px;
+    animation: brdr 2s infinite;
+}
+@keyframes brdr
+{
+    from
+    {
+        border: 3px solid #f5df4e;
+        transition: 0.3s;
+    }
+    to
+    {
+        border: 3px solid #cfbc3e;
+        transition: 0.3s;
+    }
+}
+.skill
+{
+    width: 90%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 5px 0;
+
+}
+.skill-content
+{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    font-weight: bold;
+}
+.skill-degree
+{
+    width: 100%;
+    height: 10px;
+    background-color: silver;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+.skill-degree p
+{
+    height: 100%;
+    background-color: #f5df4e;
+    border-radius: 10px;
+}
+
+.work
+{
+    width: 100%;
+    height: 70px;
+    border-radius: 5px;
+    margin: 5px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background: #f5df4e;
+}
+.work-img
+{
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.work-img img
+{
+    width: 100%;
+}
+
+
+@media(max-width:1000px)
+{
+    .skills
+    {
+        flex-wrap: wrap;
+    }
+    .ability
+    {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+    .experience
+    {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+}
